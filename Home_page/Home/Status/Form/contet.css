@@ -1,0 +1,123 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container
+{
+    
+    transform: translateY(50%);
+     /* background-color: red; */
+     box-shadow: 10px 10px 25px grey;
+     padding: 25px;
+}
+
+ h1{
+    text-align: center;
+    color: rgb(45, 161, 161);
+    font-family:sans-serif;
+    animation: letters 1.5s linear 1 both;
+} 
+
+.btn
+{
+   position: relative;
+   left: 50%;
+   transform: translate(-50%);
+   margin-top: 20px;
+}
+
+
+.circle
+{
+
+    border: 15px solid white;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius:50%;
+    background-color: red;
+    float: left;
+    left: 50%;
+    margin-top: 70px;
+    transform: translate(-50%); 
+    box-shadow: 10px 10px 25px grey;
+}
+
+.status
+{
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+
+    color: royalblue;
+
+    transform: rotate(-15deg);
+
+    animation: rot 4s linear 1s infinite both;
+    
+    
+    
+}
+.line
+{
+    position: relative;
+    width: 80%;
+    height: 7px;
+    background-color: red;
+    border: 3px solid white;
+    left: 67%;
+    transform: translateY(-24px);
+   
+    
+
+    box-shadow: 10px 10px 25px grey;
+   
+    border-radius:10px;
+ }
+
+ 
+
+ @keyframes rot
+ {
+     0%
+     {
+        transform: rotate(-15deg);
+     }
+    
+     25%
+     {
+        transform: rotate(0deg);
+     }
+     50%
+     {
+        transform: rotate(15deg);
+     }
+     75%
+     {
+        transform: rotate(0deg);
+     }
+    100%
+     {
+        transform: rotate(-15deg);
+     }
+    
+ }
+ @keyframes letters
+ {
+     0%
+     {
+         letter-spacing: 0px;
+     }
+     50%
+     {
+         letter-spacing: 10px;
+     }
+     100%
+     {
+         letter-spacing: 0px;
+     }
+     
+ }
+ h3
+ {
+    color: red;
+ }

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            Administrator Login
+        </title>
+        <link rel="stylesheet" href="login1.css">
+
+        <link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    </head>
+
+    <body>
+
+<div class="container login">
+                <div class="row">
+                    <div class="col-md-3 login-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome</h3>
+                        <p>You are 30 seconds away from earning your own money!</p>
+                        
+                    </div>
+                    <div class="col-md-9 login-right">
+                        
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="login-heading"><strong>Administrator Login</strong></h3>
+                                <form name="form1" action="Login.php" method="post">
+                                
+                                            <div class="form-group" id="email">
+                                            <input type="email" class="form-control" id="emailId" placeholder="Your Email *" value="" required="" name="email"/><br>
+                                        
+                                            
+                                        
+                                            <input type="password" class="form-control" placeholder="Password *" value="" required="" name="password"/>
+                                            </div>
+
+                                        
+                                        <a href="Forgot_password/Forgot_password.html" class="asmita">Forgot Your Password</a>
+                                       
+                                        <input type="submit" class="btnLogin"  value="Login" onclick="check(document.form1.emailId)" />
+                                 
+                                
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                </body>
+
+    <script type="text/javascript">
+        function check(inputText)
+        {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(inputText.value.match(mailformat))
+            {
+            document.form1.text1.focus();
+            return true;
+            }
+            else
+            {
+            alert("You have entered an invalid email address!");
+            document.form1.text1.focus();
+            return false;
+            }
+        }
+    </script>
+</html>

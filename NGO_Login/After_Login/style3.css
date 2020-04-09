@@ -1,0 +1,50 @@
+.container
+    {
+      border: solid 1px black;
+      box-shadow: 15px 16px 18px #888888;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      background:  rgba(0, 0, 0, 0.2);
+      margin-bottom: 40px;
+    }
+h1
+{
+  color:rgba(0, 140, 192, 0.56);
+   font-family: 'Libre Baskerville', serif;
+}
+h3
+{
+  font-family: cursive;
+}
+.fa
+{
+  cursor: pointer;
+}
+.fa-check
+{
+  color: green;
+}
+.fa-close
+{
+  color: red;
+}
+button
+{
+  background: transparent;
+  border: none;
+  outline: none;
+  position: relative;
+  margin: 20px;
+}
+
+.change
+{
+  background: white;
+}
+.approve
+{
+  position: relative;
+  top: -30%;
+}

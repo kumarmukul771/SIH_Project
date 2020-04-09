@@ -1,0 +1,17 @@
+.heads{
+	font-size: 22px;
+}
+.mains{
+	position: absolute;
+	left: 10px;
+}
+
+.headButtons{
+	position: absolute;
+	right: 30px;
+	margin-top: 7px;
+}
+
+.headButtons a{
+	margin-left: 15px;
+}

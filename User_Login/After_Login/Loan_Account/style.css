@@ -1,0 +1,28 @@
+.container
+    {
+      height: 70%;
+      border: solid 1px black;
+      box-shadow: 15px 16px 18px #888888;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      position: absolute;
+      background:  rgba(0, 0, 0, 0.2);
+    }
+hr
+{
+  width: 40%;
+  height:  2px;
+  top: -18px;
+  position: relative;
+  background: black;
+}
+h1
+{
+  color:rgba(0, 140, 192, 0.56);
+   font-family: 'Libre Baskerville', serif;
+}
+h3
+{
+  font-family: cursive;
+}

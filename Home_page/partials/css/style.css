@@ -1,0 +1,11 @@
+.address::after{
+	content: " Adityapur, Jamshedpur, Jharkhand 831014 ";
+	position: absolute;
+	left: 25px;
+}
+
+.counts{
+	position: absolute;
+	right: 200px; 
+	margin-bottom: 50px;
+}

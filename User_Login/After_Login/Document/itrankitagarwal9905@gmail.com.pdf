@@ -1,0 +1,148 @@
+<?php
+session_start();
+if(!isset($_SESSION['email']))
+ header('location:http://localhost/SIH/User_Login/index.html');
+else
+{
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style type="text/css">
+	
+  		.done 
+  		{
+  			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS1PtHiDVLOKSBSsNlX7NI59DftQBC7f9TbLj77MK0VKMtmfFjG");
+  			background-size: cover;
+  		}
+  		
+  		.container
+  		{
+  			text-align: center;
+  		}
+
+  		.kunal
+  		{
+  			width: 100%;
+  			/*background-color: green;*/
+  			height: 100px;
+  			/*position: absolute;*/
+  			/*top: 400px;*/
+  		}
+
+  		.mukulmuk
+  		{
+  			width: 8%;
+  			height: 90%;
+  			background-color: red;
+  			float: left;
+  			/*position: relative;*/
+  			top: 0%;
+  			left: 50%;
+  			transform: translate(-620%,170%); /* to change y coodrdinate of red boxes*/
+  			border: solid 1px grey;
+  			border-radius: 50%;
+  			margin-top: 3%;
+  			text-align: center;
+  		}
+
+  		.mukulmuk span
+  		{
+  			position: relative;
+  			top: 28%;
+  			font-weight: 200%;
+  			font-size: 200%;
+  		}
+
+  		.kunal hr
+  		{
+  			width: 80%;
+  			height: 3%;
+  			background: black;
+  			position: relative;
+  			top: 260%;/* change to move hr*/
+  			left: 0%;
+  		}
+
+  		.kunal a
+  		{
+  			text-decoration: none;
+  			color: black;
+  		}
+
+  		.others
+  		{
+
+  			margin-left:  5%;
+  		}
+
+  		.else 
+  		{
+  			margin-left: 5.6%;
+  		}
+      .row h1
+      {
+        font-weight: xx-large;
+        font-size: 50px;
+      }
+      .another
+      {
+        background: none;
+        border: none;
+        text-align: center;
+        font-size: x-small;
+        transform: translate(-630%,110%);
+      }
+	</style>
+</head>
+<body>
+		<div class="container">
+      <div class="row"><h1>Loan Application form status</h1></div>
+		<div class="row kunal">
+			<hr>
+			<a href="../Pg1.php"><div class="mukulmuk col-md-2 col-sm-4 else"><span>1</span></div></a>
+			<a href="../Pg2.php"><div class="mukulmuk col-md-2 col-sm-4 others"><span>2</span></div></a>
+			<a href="../Pg3.php"><div class="mukulmuk col-md-2 col-sm-4 others"><span>3</span></div></a>
+			<a href="../Pg4.php"><div class="mukulmuk col-md-2 col-sm-4 others"><span>4</span></div></a>
+			<a href="../Pg5.php"><div class="mukulmuk col-md-2 col-sm-4 others"><span>5</span></div></a>
+      <a href="../Pg6.php"><div class="mukulmuk col-md-2 col-sm-4 others"><span>6</span></div></a>
+      <a href="#"><div class="mukulmuk col-md-2 col-sm-4 others"><span>7</span></div></a>
+	</div>
+
+    <div class="row kunal">
+      <div class="mukulmuk col-md-2 col-sm-4 else another"><span>Personal Details</span></div>
+      <div class="mukulmuk col-md-2 col-sm-4 others another"><span>Nominee Details</span></div>
+      <div class="mukulmuk col-md-2 col-sm-4 others another"><span>Demographic Details</span></div>
+      <div class="mukulmuk col-md-2 col-sm-4 others another"><span>Account Details</span></div>
+      <div class="mukulmuk col-md-2 col-sm-4 others another"><span>Upload Documents</span></div>
+      <div class="mukulmuk col-md-2 col-sm-4 others another"><span>Purpose</span></div>
+      <div class="mukulmuk col-md-2 col-sm-4 others another"><span>Upload Documents</span></div>
+  </div>
+
+  
+
+
+	<button onclick="change()">Try it</button>
+</body>
+<script type="text/javascript">
+	function change()
+	{
+		console.log("Connected");
+		var obj=document.querySelectorAll(".mukulmuk");
+		// var obj2=document.querySelectorAll(".rem");
+		console.log(obj[0]);
+		for(var i=0;i<3;i++)
+		{
+			obj[i].classList.add("done");
+			obj[i].innerHTML="";
+		}
+	}
+</script>
+</html>
+ 
+<?php
+}
+?>

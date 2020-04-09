@@ -1,0 +1,61 @@
+
+#preloader{
+	/*position: fixed;*/
+	width: 100%;
+	height: 100vh;
+	background: #fff url(../Images/301.gif) no-repeat center;
+/*	z-index: 99;*/
+}
+
+.hid{
+	width: 100%;
+	height: 30%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 70%;
+}
+
+.box{
+	height: 300px;
+	width: 300px;
+	background-color: orange;
+	margin: 30px;
+	position: relative;
+}
+
+.rights{ 
+	position: relative;
+	left: 160%; 
+}
+
+.horizontal{
+	position: relative;
+	width: 700px;
+	height: 3px;
+	background: red;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.test_text{
+	text-align: center;
+	line-height: 40px;
+	margin-bottom: 18px;
+	font-weight: 700;
+}
+
+.address::after{
+	content: " Adityapur, Jamshedpur, Jharkhand 831014 ";
+	position: absolute;
+	left: 25px;
+}
+
+.cont{
+	color:;
+}
+
+.counts{
+	position: absolute;
+	right: 200px; 
+	margin-bottom: 50px;
+}
